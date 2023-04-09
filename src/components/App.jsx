@@ -1,16 +1,24 @@
+import { ContactInputForm } from './ContactInputForm/ContactInputForm';
+import { ContactList } from './ContactList/ContactList';
+import { FilterForm } from './FilterForm/FilterForm';
+import { Wrapper } from './App.styled';
+
+import { useDispatch } from 'react-redux';
+import { fetchContacts } from 'components/redux/operations';
+import { useEffect } from 'react';
+
 export const App = () => {
-  return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
-  );
+   const dispatch = useDispatch();
+
+   useEffect(() => {
+      dispatch(fetchContacts());
+   }, [dispatch]);
+
+   return (
+      <Wrapper>
+         <ContactInputForm />
+         <FilterForm />
+         <ContactList />
+      </Wrapper>
+   );
 };
