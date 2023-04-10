@@ -4,7 +4,7 @@ import { FilterForm } from './FilterForm/FilterForm';
 import { Wrapper } from './App.styled';
 
 import { useDispatch } from 'react-redux';
-import { fetchContacts } from 'components/redux/operations';
+import { fetchContacts } from 'redux/operations';
 import { useEffect } from 'react';
 
 export const App = () => {

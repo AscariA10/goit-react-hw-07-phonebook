@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 // import { deleteContact } from '../redux/contactSlice';
-import { fetchContacts, deleteContact } from 'components/redux/operations';
-import { getContacts } from 'components/redux/selectors';
+import { fetchContacts, deleteContact } from 'redux/operations';
+import { getContacts } from 'redux/selectors';
 import { useEffect } from 'react';
 
 import PropTypes from 'prop-types';

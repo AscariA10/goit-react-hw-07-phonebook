@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { filterContacts } from '../redux/filterSlice';
+import { filterContacts } from '../../redux/filterSlice';
 
 export const FilterForm = () => {
    const [filterText, setFilterText] = useState('');

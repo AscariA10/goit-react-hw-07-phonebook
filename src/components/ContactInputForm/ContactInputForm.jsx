@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
-import { addContact } from 'components/redux/operations';
+import { addContact } from 'redux/operations';
 
-import { getContacts } from 'components/redux/selectors';
+import { getContacts } from 'redux/selectors';
 
 import { useState } from 'react';
 import { Formik } from 'formik';
