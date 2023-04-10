@@ -23,7 +23,7 @@ export const ContactInputForm = () => {
       if (contactCheck(name)) {
          return alert(`${name} alredy in contacts`);
       }
-      dispatch(addContact(name));
+      dispatch(addContact({ name, number }));
       setName('');
       setNumber('');
    }
